@@ -1,9 +1,9 @@
 var React = require('react');
 
-var WeatherMessage = ({temp, location}) => {
+var WeatherMessage = ({temp, location, country}) => {
 	return (
 		<h4 className="text-center">
-			{temp}&#8457; in <span className="capitalize">{location}</span>.
+			{temp}&#8457; in {location}, {country}.
 		</h4> 
 	)
 };
